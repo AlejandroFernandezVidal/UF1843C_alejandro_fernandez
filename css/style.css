@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lexend:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+}
+
+:root {
+    --breakpoint: 1200px;
+    --color-clar: rgb(245, 245, 245);
+    --color-secundari: #bc916e;
+    --color-secundari50x100: #be8250;
+    --font-titols: "Lexend", Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: var(--color-clar);
+}
+
+.breakpoint {
+    width: var(--breakpoint);
+    margin: 0 auto;
+}
+
+#adalt {
+    padding: 20px 0;
+    background-color: var(--color-secundari);
+    background-color: var(--color-clar);
+}
+
+#adalt .breakpoint {
+    border-bottom: 2px solid var(--color-secundari);
+}
+
+.logos {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5px;
+    list-style: none;
+}
+
+.logos>li {
+    border: 2px solid transparent;
+}
+
+.logos>li:hover {
+    background-color: var(--color-secundari);
+    border-radius: 10px;
+    box-shadow: 0 0 4px gray;
+
+}
+#adalt > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#titol {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+}
+
+#titol>img {
+    width: 200px;
+}
+
+#first {
+    display: inline;
+    font-family: var(--font-titols);
+    font-size: 3rem;
+    font-weight: 200;
+    text-shadow: 4px 4px 2px rgba(128, 128, 128, 0.58);
+}
+
+#first>span {
+    font-family: var(--font-titols);
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+}
+
+#barra {
+    background-color: var(--color-secundari);
+    padding: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#barra-option-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+#menu a {
+    font-size: 1.2rem;
+    border-top: 3px solid transparent;
+    color: black;
+}
+
+#menu a:hover {
+    border-top: 3px solid var(--color-secundari);
+    color: white;
+}
+
+
+#cos {
+    margin-top: 1rem;
+    background-color: var(--color-clar);
+}
+
+#cos>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recetas {
+    width: 33%;
+    border: 10px solid transparent;
+}
+
+.recetas:hover {
+    border: 10px solid var(--color-secundari50x100);
+    background-color: white;
+
+}
+
+.foto img {
+    width: 100%;
+}
+
+.breakpoint a {
+    text-decoration: none;
+}
+
+.div-text {
+    padding: 20px;
+}
+
+.breakpoint h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: black;
+    font-family: var(--font-titols);
+}
+
+.div-text>p {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.div-text>p>span {
+
+    padding: 20px;
+    background-color: var(--color-secundari);
+    color: black;
+    font-family: var(--font-titols);
+}
+
+#next {
+    display: flex;
+    justify-content: space-between !important;
+    align-content: center;
+}
+
+#next p {
+    padding: 1rem;
+}
+
+#next p a:hover {
+    border-top: 2px solid var(--color-secundari)
+}
+
+
+#final {
+    background-color: var(--color-secundari);
+    padding: 2rem 0 3rem 0;
+
+}
+
+#final .breakpoint div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#final .breakpoint div img {
+    width: 10%;
+    border-radius: 20px;
+}
+
+/* #final .breakpoint div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+} */
+
+#final .breakpoint ul:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    list-style: none;
+}
+
+#final p {
+    color: black;
+    border-top: 2px solid transparent;
+}
+
+#final a {
+    color: black;
+}
+
+#final a:hover {
+    border-top: 2px solid black;
+}
+
+
+/* RECETAS */
+
+#recepta-div {
+    display: flex;
+    justify-content: center;
+    /* gap: 2rem; */
+
+}
+
+#recepta-imatge {
+    width: 100%;
+    background-image: url(../img/zanahorias_glaseadas_con_miel_56471_600.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+}
+
+#recepta-text {
+    width: 100%;
+    padding: 2rem;
+    color: black;
+}
+
+#recepta-text p {
+    color: black;
+}
+
+#recepta-text h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: black;
+    font-family: var(--font-titols);
+}
+
+#recepta-text h3 {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    font-family: var(--font-titols);
+}
+
+li {
+    margin-left: 2rem;
+    color: black;
+}
